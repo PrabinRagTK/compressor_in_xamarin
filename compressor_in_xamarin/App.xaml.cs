@@ -14,7 +14,8 @@ namespace compressor_in_xamarin
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new NavigationPage(new FilePicker());
         }
 
         protected override void OnStart()
